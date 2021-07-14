@@ -23,7 +23,6 @@ func main() {
         })
 
         if err := http.ListenAndServe(":8080", nil); err != nil {
-                slowdown = 0 * time.Millisecond
                 log.Fatal("ListenAndServe:", err)
         }
 }
